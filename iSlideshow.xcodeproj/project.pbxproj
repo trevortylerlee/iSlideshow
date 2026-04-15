@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000001 /* iSlideshowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000001 /* iSlideshowApp.swift */; };
+		AA000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000002 /* ContentView.swift */; };
+		AA000003 /* ImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000003 /* ImportView.swift */; };
+		AA000004 /* SlideshowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000004 /* SlideshowView.swift */; };
+		AA000005 /* SlideshowWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000005 /* SlideshowWindow.swift */; };
+		AA000006 /* SlideshowEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000006 /* SlideshowEngine.swift */; };
+		AA000007 /* MediaDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000007 /* MediaDropDelegate.swift */; };
+		AA000008 /* ThumbnailGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000008 /* ThumbnailGrid.swift */; };
+		AA000009 /* URL+Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000009 /* URL+Media.swift */; };
+		AA00000A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB00000A /* Assets.xcassets */; };
+		AA00000B /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = AB00000D /* Credits.html */; };
+		AA00000C /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000E /* VideoPlayerView.swift */; };
+		AA00000D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000F /* AppState.swift */; };
+		AA00000E /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000010 /* Playlist.swift */; };
+		AA00000F /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000011 /* ThumbnailCell.swift */; };
+		AA000011 /* ThumbnailPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000012 /* ThumbnailPipeline.swift */; };
+		AA000012 /* ThumbnailDiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000013 /* ThumbnailDiskCache.swift */; };
+		AA000013 /* SlideshowSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000014 /* SlideshowSettingsView.swift */; };
+		AA000014 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AB000015 /* PrivacyInfo.xcprivacy */; };
+		AA000015 /* MediaImportCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000016 /* MediaImportCache.swift */; };
+		AA000016 /* DragExportOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000017 /* DragExportOperation.swift */; };
+		BA000001 /* SlideshowEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000001 /* SlideshowEngineTests.swift */; };
+		BA000002 /* URLMediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000002 /* URLMediaTests.swift */; };
+		BA000003 /* PlaylistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000004 /* PlaylistTests.swift */; };
+		BA000004 /* ThumbnailPipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000005 /* ThumbnailPipelineTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE000010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE000001;
+			remoteInfo = iSlideshow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB000001 /* iSlideshowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSlideshowApp.swift; sourceTree = "<group>"; };
+		AB000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB000003 /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
+		AB000004 /* SlideshowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowView.swift; sourceTree = "<group>"; };
+		AB000005 /* SlideshowWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowWindow.swift; sourceTree = "<group>"; };
+		AB000006 /* SlideshowEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowEngine.swift; sourceTree = "<group>"; };
+		AB000007 /* MediaDropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDropDelegate.swift; sourceTree = "<group>"; };
+		AB000008 /* ThumbnailGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailGrid.swift; sourceTree = "<group>"; };
+		AB000009 /* URL+Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Media.swift"; sourceTree = "<group>"; };
+		AB00000A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB00000B /* iSlideshow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iSlideshow.entitlements; sourceTree = "<group>"; };
+		AB00000C /* iSlideshow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSlideshow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB00000D /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		AB00000E /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		AB00000F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		AB000010 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		AB000011 /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
+		AB000012 /* ThumbnailPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailPipeline.swift; sourceTree = "<group>"; };
+		AB000013 /* ThumbnailDiskCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailDiskCache.swift; sourceTree = "<group>"; };
+		AB000014 /* SlideshowSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowSettingsView.swift; sourceTree = "<group>"; };
+		AB000015 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		AB000016 /* MediaImportCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaImportCache.swift; sourceTree = "<group>"; };
+		AB000017 /* DragExportOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragExportOperation.swift; sourceTree = "<group>"; };
+		BB000001 /* SlideshowEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowEngineTests.swift; sourceTree = "<group>"; };
+		BB000002 /* URLMediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLMediaTests.swift; sourceTree = "<group>"; };
+		BB000003 /* iSlideshowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSlideshowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB000004 /* PlaylistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTests.swift; sourceTree = "<group>"; };
+		BB000005 /* ThumbnailPipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailPipelineTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD000001 = {
+			isa = PBXGroup;
+			children = (
+				AD000002 /* iSlideshow */,
+				AD000005 /* iSlideshowTests */,
+				AD000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD000002 /* iSlideshow */ = {
+			isa = PBXGroup;
+			children = (
+				AB000001 /* iSlideshowApp.swift */,
+				AB000002 /* ContentView.swift */,
+				AB000003 /* ImportView.swift */,
+				AB000004 /* SlideshowView.swift */,
+				AB000005 /* SlideshowWindow.swift */,
+				AB000006 /* SlideshowEngine.swift */,
+				AB000007 /* MediaDropDelegate.swift */,
+				AB000008 /* ThumbnailGrid.swift */,
+				AB000011 /* ThumbnailCell.swift */,
+				AB000012 /* ThumbnailPipeline.swift */,
+				AB000013 /* ThumbnailDiskCache.swift */,
+				AB000016 /* MediaImportCache.swift */,
+				AB00000E /* VideoPlayerView.swift */,
+				AB00000F /* AppState.swift */,
+				AB000010 /* Playlist.swift */,
+				AB000014 /* SlideshowSettingsView.swift */,
+				AB000017 /* DragExportOperation.swift */,
+				AD000003 /* Extensions */,
+				AB00000A /* Assets.xcassets */,
+				AB00000B /* iSlideshow.entitlements */,
+				AB000015 /* PrivacyInfo.xcprivacy */,
+				AB00000D /* Credits.html */,
+			);
+			path = iSlideshow;
+			sourceTree = "<group>";
+		};
+		AD000003 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB000009 /* URL+Media.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AD000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB00000C /* iSlideshow.app */,
+				BB000003 /* iSlideshowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD000005 /* iSlideshowTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB000001 /* SlideshowEngineTests.swift */,
+				BB000002 /* URLMediaTests.swift */,
+				BB000004 /* PlaylistTests.swift */,
+				BB000005 /* ThumbnailPipelineTests.swift */,
+			);
+			path = iSlideshowTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE000001 /* iSlideshow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF000003 /* Build configuration list for PBXNativeTarget "iSlideshow" */;
+			buildPhases = (
+				AE000002 /* Sources */,
+				AC000001 /* Frameworks */,
+				AE000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSlideshow;
+			productName = iSlideshow;
+			productReference = AB00000C /* iSlideshow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE000001 /* iSlideshowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF000004 /* Build configuration list for PBXNativeTarget "iSlideshowTests" */;
+			buildPhases = (
+				BE000002 /* Sources */,
+				BC000001 /* Frameworks */,
+				BE000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD000002 /* PBXTargetDependency */,
+			);
+			name = iSlideshowTests;
+			productName = iSlideshowTests;
+			productReference = BB000003 /* iSlideshowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE000010 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					AE000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					BE000001 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AE000001;
+					};
+				};
+			};
+			buildConfigurationList = AF000001 /* Build configuration list for PBXProject "iSlideshow" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD000001;
+			productRefGroup = AD000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE000001 /* iSlideshow */,
+				BE000001 /* iSlideshowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00000A /* Assets.xcassets in Resources */,
+				AA00000B /* Credits.html in Resources */,
+				AA000014 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000001 /* iSlideshowApp.swift in Sources */,
+				AA000002 /* ContentView.swift in Sources */,
+				AA000003 /* ImportView.swift in Sources */,
+				AA000004 /* SlideshowView.swift in Sources */,
+				AA000005 /* SlideshowWindow.swift in Sources */,
+				AA000006 /* SlideshowEngine.swift in Sources */,
+				AA000007 /* MediaDropDelegate.swift in Sources */,
+				AA000008 /* ThumbnailGrid.swift in Sources */,
+				AA00000F /* ThumbnailCell.swift in Sources */,
+				AA000011 /* ThumbnailPipeline.swift in Sources */,
+				AA000012 /* ThumbnailDiskCache.swift in Sources */,
+				AA000015 /* MediaImportCache.swift in Sources */,
+				AA00000E /* Playlist.swift in Sources */,
+				AA000013 /* SlideshowSettingsView.swift in Sources */,
+				AA000016 /* DragExportOperation.swift in Sources */,
+				AA000009 /* URL+Media.swift in Sources */,
+				AA00000C /* VideoPlayerView.swift in Sources */,
+				AA00000D /* AppState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA000001 /* SlideshowEngineTests.swift in Sources */,
+				BA000002 /* URLMediaTests.swift in Sources */,
+				BA000003 /* PlaylistTests.swift in Sources */,
+				BA000004 /* ThumbnailPipelineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE000001 /* iSlideshow */;
+			targetProxy = BD000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AF000010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AF000020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iSlideshow/iSlideshow.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = BRRJCJWD7M;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iSlideshow;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© Copyright 2026 Trevor Tyler Lee";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.2026.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trevortylerlee.iSlideshow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AF000021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iSlideshow/iSlideshow.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = BRRJCJWD7M;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iSlideshow;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2026 Trevor Tyler Lee";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.2026.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trevortylerlee.iSlideshow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AF000030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BRRJCJWD7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trevortylerlee.iSlideshow.appTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSlideshow.app/Contents/MacOS/iSlideshow";
+				TEST_TARGET_NAME = iSlideshow;
+			};
+			name = Debug;
+		};
+		AF000031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BRRJCJWD7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trevortylerlee.iSlideshow.appTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSlideshow.app/Contents/MacOS/iSlideshow";
+				TEST_TARGET_NAME = iSlideshow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF000001 /* Build configuration list for PBXProject "iSlideshow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF000010 /* Debug */,
+				AF000011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF000003 /* Build configuration list for PBXNativeTarget "iSlideshow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF000020 /* Debug */,
+				AF000021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF000004 /* Build configuration list for PBXNativeTarget "iSlideshowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF000030 /* Debug */,
+				AF000031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE000010 /* Project object */;
+}
